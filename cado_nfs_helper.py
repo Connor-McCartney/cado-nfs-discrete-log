@@ -23,5 +23,5 @@ def cado_dlog(p, ell, a, base):
     dlog = (log_a * pow(log_b, -1, ell)) % ell
     return dlog
 
-def pohlig–hellman():
+def pohlig_hellman():
     #todo
