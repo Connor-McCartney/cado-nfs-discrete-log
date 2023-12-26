@@ -5,15 +5,11 @@ from math import gcd
 from collections import defaultdict
 cado_path = "/home/connor/Documents/cado-nfs/cado-nfs.py"
 
-def n_order(a, n, isprime=False):
+def n_order(a, n):
     if gcd(a, n) != 1:
         raise ValueError("The two numbers should be relatively prime")
     factors = defaultdict(int)
-    if isprime:
-        t1 = {n: 1}
-    else:
-        t1 = dict(factor(n)).items()
-    for px, kx in t1.items():
+    for px, kx in dict(factor(n)).items():
         if kx > 1:
             factors[px] += kx - 1
         fpx = dict(factor(px - 1))
