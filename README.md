@@ -141,49 +141,61 @@ for s in range(50, 60):
 cado: 11.8 minutes
 bsgs: 0.1 minutes
 
+
 45 bit factor:
 cado: 8.1 minutes
 bsgs: 0.2 minutes
 
+
 50 bit factor:
-cado: 9.8 minutes
-bsgs: 1.3 minutes
+cado: 9.5 minutes
+bsgs: 1.0 minutes
+
 
 51 bit factor:
-cado: 5.6 minutes
-bsgs: 1.2 minutes
+cado: 4.1 minutes
+bsgs: 0.9 minutes
+
 
 52 bit factor:
 cado: 4.6 minutes
-bsgs: 2.0 minutes
+bsgs: 1.6 minutes
+
 
 53 bit factor:
-cado: 4.9 minutes
-bsgs: 3.0 minutes
+cado: 4.5 minutes
+bsgs: 2.1 minutes
+
 
 54 bit factor:
-cado: 7.2 minutes
-bsgs: 3.3 minutes
+cado: 5.3 minutes
+bsgs: 3.2 minutes
+
 
 55 bit factor:
-cado: 6.0 minutes
-bsgs: 6.2 minutes
+cado: 4.4 minutes
+bsgs: 2.6 minutes
+
 
 56 bit factor:
-cado: 7.6 minutes
-bsgs: 6.6 minutes
+cado: 5.4 minutes
+bsgs: 6.5 minutes
+
 
 57 bit factor:
-cado: 6.1 minutes
-bsgs: 12.0 minutes
+cado: 6.3 minutes
+bsgs: 5.5 minutes
+
 
 58 bit factor:
 cado: 6.1 minutes
-bsgs: 13.9 minutes
+bsgs: 8.2 minutes
+
 
 59 bit factor:
 cado: 6.4 minutes
-bsgs: 10.5 minutes
+bsgs: 22.7 minutes
+
 
 60 bit factor:
 cado: 8.4 minutes
