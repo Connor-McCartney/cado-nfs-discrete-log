@@ -1,8 +1,8 @@
+from sage.all import *
 import subprocess
 from sympy.ntheory.modular import crt
 from math import gcd
 from collections import defaultdict
-
 cado_path = "/home/connor/Documents/cado-nfs/cado-nfs.py"
 
 def n_order(a, n, isprime=False):
@@ -73,7 +73,7 @@ def pohlig_hellman(n, a, b, order=None, f=None):
             bj = pow(b, order // pi, n)
             if pi < 2**58:
                 cj = GF(n)(aj).log(bj)
-            elif:
+            else:
                 cj = cado_dlog(n, pi, aj, bj)
             assert 1 == pow(pow(bj, cj, n) * pow(aj, -1, n), order//pi, n)
             l[i] += cj * pi**j
