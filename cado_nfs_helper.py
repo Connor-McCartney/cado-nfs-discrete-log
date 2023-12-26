@@ -72,7 +72,10 @@ def pohlig_hellman(n, a, b, order=None, f=None):
             aj = pow(a * pow(gj, -1, n), order // pi**(j + 1), n)
             bj = pow(b, order // pi, n)
             if pi < 2**58:
-                cj = GF(n)(aj).log(bj)
+                if is_prime(n):
+                    cj = GF(n, proof=False)(aj).log(bj)
+                else:
+                    cj = Zmod(n)(aj).log(bj)
             else:
                 cj = cado_dlog(n, pi, aj, bj)
             assert 1 == pow(pow(bj, cj, n) * pow(aj, -1, n), order//pi, n)
