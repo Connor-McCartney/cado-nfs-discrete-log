@@ -9,7 +9,7 @@ def test1():
     print(f)
     d = randint(0, order)
     a = pow(g, d, p)
-    print(d == pohlig_hellman(p, a, g, order, f))
+    print(d == pohlig_hellman(p, a, g))
 
 test1()
 
